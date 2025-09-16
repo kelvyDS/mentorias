@@ -1,0 +1,41 @@
+| Tipo Primitivo | Classe Wrapper | Método Interessante      | O que faz                                                     |
+| -------------- | -------------- | ------------------------ | ------------------------------------------------------------- |
+| `int`          | `Integer`      | `parseInt(String s)`     | Converte uma string para número inteiro (`int`)               |
+| `double`       | `Double`       | `isNaN(double d)`        | Verifica se o número é "Not a Number" (NaN)                   |
+| `char`         | `Character`    | `isDigit(char c)`        | Verifica se o caractere é um dígito numérico (0–9)            |
+| `boolean`      | `Boolean`      | `parseBoolean(String s)` | Converte uma string em um valor booleano (`true` ou `false`)  |
+| —              | `String`\*     | `toUpperCase()`          | Converte todos os caracteres da string para letras maiúsculas |
+
+import java.util.Scanner;
+
+public class ExemploWrappers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 1. Character - Verifica se o caractere é um número
+        System.out.print("Digite um caractere: ");
+        char caractere = scanner.next().charAt(0);
+
+        if (Character.isDigit(caractere)) {
+            System.out.println("O caractere é um número.");
+        } else {
+            System.out.println("O caractere NÃO é um número.");
+        }
+
+        // 2. Integer - Converte uma string para inteiro
+        System.out.print("Digite um número inteiro (em texto): ");
+        String numeroTexto = scanner.next();
+
+        int numero = Integer.parseInt(numeroTexto);
+        System.out.println("Número convertido + 10 = " + (numero + 10));
+
+        // 3. String - Converte para letras maiúsculas
+        System.out.print("Digite uma frase: ");
+        scanner.nextLine(); // Limpa o buffer do teclado
+        String frase = scanner.nextLine();
+
+        System.out.println("Frase em maiúsculas: " + frase.toUpperCase());
+
+        scanner.close();
+    }
+}
