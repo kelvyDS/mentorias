@@ -1,0 +1,28 @@
+
+public class VerificacaoDesconto {
+    public static void main(String[] args) {
+        // Variáveis booleanas
+        boolean produtoComDesconto = true;
+        boolean clienteTemCupom = false;
+
+        // Verificação com operador lógico OR (||)
+        boolean descontoAplicado = produtoComDesconto || clienteTemCupom;
+
+        // Exibição do resultado
+        System.out.println("Desconto aplicado: " + descontoAplicado);
+    }
+}
+
+public class AutorizacaoCompra {
+    public static void main(String[] args) {
+        // Variáveis booleanas
+        boolean saldoSuficiente = true;
+        boolean contaVerificada = true;
+
+        // Verificação com operador lógico AND (&&)
+        boolean compraAutorizada = saldoSuficiente && contaVerificada;
+
+        // Exibição do resultado
+        System.out.println("Compra autorizada: " + compraAutorizada);
+    }
+}
