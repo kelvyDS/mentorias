@@ -1,0 +1,29 @@
+public class Retangulo {
+    public static void main(String[] args) {
+        // Declaração das variáveis base e altura
+        double base = 5.0;
+        double altura = 3.0;
+
+        // Cálculo da área e do perímetro
+        double area = base * altura;
+        double perimetro = 2 * (base + altura);
+
+        // Exibição dos resultados
+        System.out.println("Área do retângulo: " + area);
+        System.out.println("Perímetro do retângulo: " + perimetro);
+    }
+}
+
+public class ComparacaoIdades {
+    public static void main(String[] args) {
+        // Declaração das idades
+        int idadePessoa1 = 30;
+        int idadePessoa2 = 25;
+
+        // Comparação
+        boolean pessoa1MaisVelha = idadePessoa1 > idadePessoa2;
+
+        // Exibição do resultado
+        System.out.println("A primeira pessoa é mais velha: " + pessoa1MaisVelha);
+    }
+}
