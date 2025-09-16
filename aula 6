@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class NotaFinal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        final double MEDIA_APROVACAO = 7.0;
+
+        System.out.print("Digite a primeira nota: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("Digite a segunda nota: ");
+        double nota2 = scanner.nextDouble();
+
+        double media = (nota1 + nota2) / 2;
+
+        boolean aprovado = media >= MEDIA_APROVACAO;
+        System.out.println("Aprovado: " + aprovado);
+
+        scanner.close();
+    }
+}
+
+import java.util.Scanner;
+
+public class VerificacaoCompra {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        final double TAXA_DESCONTO = 0.10;
+
+        System.out.print("Digite o preço do produto: ");
+        double precoProduto = scanner.nextDouble();
+
+        System.out.print("Digite o valor disponível do cliente: ");
+        double valorDisponivel = scanner.nextDouble();
+
+        double precoComDesconto = precoProduto * (1 - TAXA_DESCONTO);
+
+        boolean compraPermitida = valorDisponivel >= precoComDesconto;
+        System.out.println("Compra permitida: " + compraPermitida);
+
+        scanner.close();
+    }
+}
+
+import java.util.Scanner;
+
+public class VerificacaoCompra {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        final double TAXA_DESCONTO = 0.10;
+
+        System.out.print("Digite o preço do produto: ");
+        double precoProduto = scanner.nextDouble();
+
+        System.out.print("Digite o valor disponível do cliente: ");
+        double valorDisponivel = scanner.nextDouble();
+
+        double precoComDesconto = precoProduto * (1 - TAXA_DESCONTO);
+
+        boolean compraPermitida = valorDisponivel >= precoComDesconto;
+        System.out.println("Compra permitida: " + compraPermitida);
+
+        scanner.close();
+    }
+}
