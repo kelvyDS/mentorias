@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class ConversaoTemperatura {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a temperatura em Celsius: ");
+        double celsius = scanner.nextDouble();
+
+        double fahrenheit = (celsius * 9 / 5) + 32;
+
+        System.out.println("Temperatura em Fahrenheit: " + fahrenheit);
+
+        scanner.close();
+    }
+}
+
+import java.util.Scanner;
+
+public class CalculoSalario {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o salário-base do funcionário: ");
+        double salarioBase = scanner.nextDouble();
+
+        System.out.print("Digite o percentual de aumento (%): ");
+        double percentual = scanner.nextDouble();
+
+        double salarioFinal = salarioBase + (salarioBase * percentual / 100);
+
+        System.out.println("Salário final com reajuste: R$ " + salarioFinal);
+
+        scanner.close();
+    }
+}
